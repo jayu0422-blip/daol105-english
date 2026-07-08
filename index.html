@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>다올105 × 민귀홍영어 | 미사강변고 영어 내신, 통암기 아닌 선지 변별력</title>
+<meta name="description" content="하남 미사 미사강변고 영어 내신(고1·고2). 다올105 × 민귀홍영어(민귀홍·한양대 영어영문). 통암기로는 안 되는 변별형 시험을 선지 분석·소거법·킬러 어휘로 대비 — 고1 서술형 함정·고2 객관식 선지 변별. 정규+클리닉." />
+<link rel="preconnect" href="https://cdn.jsdelivr.net" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2107@1.1/NanumSquareNeo-Variable.css" />
+<style>
+  :root{
+    --ink:#0c1a36;--navy:#15294f;--navy-soft:#213c6c;
+    --gold:#c6a04a;--gold-bright:#e7c56d;--gold-soft:#f1e4bf;
+    --cream:#faf6ee;--cream-2:#f4ecdb;--paper:#ffffff;
+    --text:#1b2440;--muted:#5a6480;--line:#e8dfc9;--danger:#c0392b;--ok:#2f7d4f;
+    --shadow:0 18px 50px -22px rgba(12,26,54,.35);--shadow-sm:0 8px 24px -14px rgba(12,26,54,.28);
+    --serif:"Nanum Myeongjo","Noto Serif KR",serif;
+    --sans:"Pretendard","Pretendard Variable",-apple-system,BlinkMacSystemFont,"Malgun Gothic","Apple SD Gothic Neo",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--text);background:var(--cream);line-height:1.72;-webkit-font-smoothing:antialiased;letter-spacing:-.01em;word-break:keep-all;overflow-x:hidden}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:900px;margin:0 auto;padding:0 22px}
+  .narrow{max-width:760px;margin-left:auto;margin-right:auto}
+  section{padding:74px 0}
+  .hl{background:linear-gradient(180deg,transparent 58%,var(--gold-soft) 58%);padding:0 .1em;font-weight:800;color:var(--ink)}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:800;letter-spacing:.12em;color:var(--gold);text-transform:uppercase;margin-bottom:16px}
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--gold)}
+  h2.sec{font-size:clamp(26px,5.4vw,40px);font-weight:800;line-height:1.32;color:var(--ink);letter-spacing:-.02em;margin-bottom:14px}
+  .lead{font-size:clamp(16px,2.4vw,18.5px);color:var(--muted);line-height:1.8}
+
+  .ticker{background:var(--ink);color:#fff;font-size:13.5px;font-weight:700;text-align:center;padding:9px 16px;border-bottom:1px solid rgba(231,197,109,.28)}
+  .ticker b{color:var(--gold-bright)}
+  .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#e64b3c;margin-right:7px;vertical-align:middle;animation:pulse 1.8s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(230,75,60,.55)}70%{box-shadow:0 0 0 9px rgba(230,75,60,0)}100%{box-shadow:0 0 0 0 rgba(230,75,60,0)}}
+
+  .hero{position:relative;overflow:hidden;color:#eaf0fb;background:radial-gradient(900px 460px at 78% -8%,rgba(231,197,109,.20),transparent 60%),radial-gradient(700px 500px at 8% 110%,rgba(33,60,108,.55),transparent 55%),linear-gradient(160deg,#0c1a36 0%,#15294f 58%,#1b3160 100%);padding:56px 0 46px}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.5;z-index:3}
+  .hero .wrap{position:relative;z-index:2}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px;align-items:end}
+  .badge-row{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:22px}
+  .badge{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:800;padding:7px 13px;border-radius:999px;border:1px solid rgba(231,197,109,.4);color:var(--gold-bright);background:rgba(231,197,109,.08)}
+  .badge.solid{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+  .hero h1{font-size:clamp(27px,5.6vw,46px);font-weight:800;line-height:1.32;letter-spacing:-.025em;color:#fff;margin-bottom:20px}
+  .hero h1 .q{color:var(--gold-bright)}
+  .hero .sub{font-size:clamp(15.5px,2.5vw,18.5px);color:#c3cee2;line-height:1.78;max-width:600px;margin-bottom:14px}
+  .hero .sub b{color:#fff}
+  .hero .micro{font-size:13.5px;color:#8ea0c4;margin-bottom:30px}
+  .hero .micro span{color:var(--gold-bright);font-weight:700}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-size:16px;font-weight:800;padding:16px 26px;border-radius:14px;transition:transform .15s ease,box-shadow .2s ease;cursor:pointer;border:none}
+  .btn-gold{background:linear-gradient(180deg,var(--gold-bright),var(--gold));color:var(--ink);box-shadow:0 14px 30px -12px rgba(231,197,109,.6)}
+  .btn-gold:hover{transform:translateY(-2px)}
+  .btn-ghost{background:rgba(255,255,255,.06);color:#eaf0fb;border:1px solid rgba(255,255,255,.28)}
+  .btn-ghost:hover{background:rgba(255,255,255,.13)}
+  .hero-pic{position:relative;display:flex;justify-content:center;align-items:flex-end;height:100%}
+  .hero-pic img{width:min(100%,320px);height:auto;filter:drop-shadow(0 18px 30px rgba(0,0,0,.45));position:relative;z-index:2}
+  .hero-pic::before{content:"";position:absolute;left:10%;right:10%;bottom:0;height:60%;background:radial-gradient(closest-side,rgba(231,197,109,.20),transparent 72%);z-index:1}
+  .hero-cred{position:absolute;left:50%;bottom:6px;transform:translateX(-50%);z-index:3;background:rgba(12,26,54,.82);backdrop-filter:blur(6px);border:1px solid rgba(231,197,109,.35);border-radius:12px;padding:9px 16px;text-align:center;white-space:nowrap;box-shadow:var(--shadow)}
+  .hero-cred b{color:var(--gold-bright);font-size:14.5px;display:block}
+  .hero-cred span{color:#c3cee2;font-size:11.5px}
+  @media (max-width:820px){.hero-grid{grid-template-columns:1fr}.hero-pic{margin-top:8px;max-height:260px;overflow:hidden}.hero-pic img{width:200px}}
+  .hero-duo{display:flex;align-items:flex-end;justify-content:center;gap:clamp(6px,3vw,26px);margin:34px auto 0;max-width:600px}
+  .hd-teacher{flex:1;max-width:250px;text-align:center}
+  .hd-photo{position:relative;height:clamp(168px,32vw,286px);display:flex;align-items:flex-end;justify-content:center}
+  .hd-photo::before{content:"";position:absolute;left:6%;right:6%;bottom:0;height:52%;background:radial-gradient(closest-side,rgba(231,197,109,.22),transparent 72%);z-index:0}
+  .hd-photo img{position:relative;z-index:1;max-height:100%;width:auto;filter:drop-shadow(0 16px 26px rgba(0,0,0,.5))}
+  .hd-role{margin-top:12px;font-size:11.5px;font-weight:800;display:inline-block;padding:3px 11px;border-radius:999px}
+  .hd-nae .hd-role{background:rgba(231,197,109,.16);color:var(--gold-bright);border:1px solid rgba(231,197,109,.4)}
+  .hd-su .hd-role{background:rgba(45,212,191,.12);color:#7fe6d3;border:1px solid rgba(45,212,191,.35)}
+  .hd-name{font-size:clamp(19px,4vw,25px);font-weight:800;color:#fff;margin-top:7px}
+  .hd-cred{font-size:11px;color:#93a2c4;margin-top:3px;line-height:1.4}
+  .hd-x{flex:0 0 auto;color:var(--gold);font-family:var(--serif);font-weight:800;font-size:clamp(18px,4vw,28px);align-self:center;padding-bottom:66px}
+  /* 고3 스트립 */
+  .grade3-strip{margin-top:26px;background:linear-gradient(160deg,#0c1a36,#17305c);border:1px solid rgba(231,197,109,.3);border-radius:20px;padding:24px 26px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;box-shadow:var(--shadow)}
+  .g3-badge{flex:0 0 auto;font-size:13px;font-weight:800;color:var(--ink);background:linear-gradient(160deg,var(--gold-bright),var(--gold));padding:8px 16px;border-radius:999px}
+  .g3-body{flex:1;min-width:240px}
+  .g3-body h4{color:#fff;font-size:clamp(16px,2.6vw,19px);font-weight:800;line-height:1.4;margin-bottom:6px}
+  .g3-body h4 .g3-hl{color:var(--gold-bright)}
+  .g3-body p{color:#c3cee2;font-size:14px;line-height:1.7}.g3-body p b{color:#fff}
+  .grade3-strip .btn{flex:0 0 auto}
+  @media (max-width:560px){.grade3-strip{flex-direction:column;align-items:stretch;text-align:center}.grade3-strip .btn{width:100%}}
+
+  /* spec cards */
+  .specband{background:var(--paper);border-bottom:1px solid var(--line);padding:30px 0}
+  .specgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .speccard{display:flex;gap:14px;align-items:center;padding:18px 18px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg,#fff,#fbf7ee);box-shadow:var(--shadow-sm)}
+  .spec-ic{flex:none;width:46px;height:46px;border-radius:12px;background:linear-gradient(160deg,var(--gold-bright),var(--gold));display:flex;align-items:center;justify-content:center;font-size:22px}
+  .spec-k{font-size:11.5px;font-weight:800;letter-spacing:.08em;color:var(--gold);text-transform:uppercase;margin-bottom:2px}
+  .spec-v{font-size:16px;font-weight:800;color:var(--ink);line-height:1.35}
+  .spec-s{font-size:12.5px;color:var(--muted);margin-top:2px}
+
+  .paper{background:var(--paper)}
+  .cream2{background:var(--cream-2)}
+  .navy-sec{background:linear-gradient(160deg,#0c1a36,#17305c);color:#e8eefb}
+  .navy-sec h2.sec{color:#fff}.navy-sec .lead{color:#b9c6df}
+
+  .story{background:var(--paper);border-radius:20px;padding:34px 30px;box-shadow:var(--shadow);border:1px solid var(--line);position:relative}
+  .story .q-mark{font-family:var(--serif);font-size:64px;color:var(--gold-soft);line-height:.6;position:absolute;top:22px;left:24px}
+  .story p{margin:0 0 15px;font-size:16.5px}.story p:last-child{margin-bottom:0}
+  .say{font-weight:800;color:var(--ink);font-size:18px;display:block;padding:12px 18px;background:var(--cream);border-left:3px solid var(--gold);border-radius:0 10px 10px 0;margin:6px 0 16px}
+  .story-note{font-size:12.5px;color:var(--muted);margin-top:16px}
+
+  .analogy{display:grid;gap:20px;margin-top:26px}
+  .analogy .card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:var(--shadow-sm)}
+  .analogy .emo{font-size:34px;margin-bottom:10px}
+  .analogy h3{font-size:20px;font-weight:800;color:var(--ink);margin-bottom:8px}
+  .analogy p{font-size:16px;color:#3a445f}
+  .pull{font-family:var(--serif);font-size:clamp(19px,3vw,26px);line-height:1.6;color:var(--ink);text-align:center;margin:34px auto 0;max-width:640px;font-weight:700}
+  .pull .em{color:var(--gold);border-bottom:2px solid var(--gold-soft)}
+  blockquote.tip{margin-top:26px;background:linear-gradient(180deg,#fff,#fbf7ec);border:1px solid var(--gold-soft);border-left:5px solid var(--gold);border-radius:0 16px 16px 0;padding:24px 26px;font-size:16.5px;color:#33405f;box-shadow:var(--shadow-sm)}
+  blockquote.tip b{color:var(--ink)}
+
+  /* ===== VS compare ===== */
+  .vs-wrap{max-width:840px;margin:30px auto 0}
+  .vs-head{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .vs-team{padding:20px 14px;text-align:center;border-radius:16px}
+  .vs-team.other{background:linear-gradient(160deg,#3a4157,#2c3244);color:#e7e9ef}
+  .vs-team.daol{background:linear-gradient(160deg,#15294f,#213c6c);color:#fff;box-shadow:0 12px 30px -16px rgba(21,41,79,.7);border:1px solid rgba(231,197,109,.4)}
+  .vt-cap{font-size:clamp(14.5px,3.2vw,18px);font-weight:800;line-height:1.3}
+  .vs-team.daol .vt-cap{color:var(--gold-bright)}
+  .vt-sub{font-size:12px;opacity:.82;margin-top:4px}
+  .vs-badge{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:52px;height:52px;border-radius:50%;background:linear-gradient(160deg,var(--gold-bright),var(--gold));color:var(--ink);font-weight:900;font-size:15px;display:flex;align-items:center;justify-content:center;border:3px solid #fff;box-shadow:0 6px 16px rgba(0,0,0,.28);z-index:3}
+  .vs-body{margin-top:6px}
+  .vsrow{margin-top:2px}
+  .vs-crit{text-align:center;font-size:12px;font-weight:800;color:var(--navy-soft);letter-spacing:.06em;margin:16px 0 8px;text-transform:uppercase}
+  .vs-cells{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .vc{border-radius:12px;padding:14px 15px;font-size:14.5px;line-height:1.5}
+  .vc.other{background:#f2f1f4;color:#6d7488;border:1px solid #e6e5ea}
+  .vc.other .x{color:var(--danger);font-weight:900;margin-right:6px}
+  .vc.daol{background:linear-gradient(180deg,#fbf6e7,#f6edd6);border:1px solid var(--gold-soft);color:#2b2f42}
+  .vc.daol .v{color:var(--ok);font-weight:900;margin-right:6px}
+  .vc.daol b{color:var(--ink);font-weight:800}
+  .vs-concl{margin-top:20px;text-align:center;background:linear-gradient(160deg,#0c1a36,#1b3160);color:#fff;border-radius:16px;padding:22px 20px}
+  .vs-concl .big{font-size:clamp(16.5px,3.6vw,22px);font-weight:800}
+  .vs-concl .big .g{color:var(--gold-bright)}
+  .vs-concl .small{font-size:13.5px;color:#b9c6df;margin-top:6px}
+  .compare-note{font-size:13px;color:var(--muted);margin-top:16px;line-height:1.6}
+  .points{margin-top:30px;display:grid;gap:14px}
+  .pt{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:var(--shadow-sm)}
+  .pt h4{font-size:17.5px;color:var(--ink);font-weight:800;margin-bottom:6px}
+  .pt h4 .n{color:var(--gold);font-family:var(--serif);margin-right:8px}
+  .pt p{font-size:15.5px;color:#3d4763}.pt p b{color:var(--ink)}
+
+  .diffs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:34px}
+  .diff{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:26px 24px;box-shadow:var(--shadow-sm);position:relative;overflow:hidden;transition:transform .18s ease,box-shadow .2s ease}
+  .diff:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+  .diff::before{content:"";position:absolute;top:0;left:0;width:100%;height:4px;background:linear-gradient(90deg,var(--gold),var(--gold-bright))}
+  .diff .num{font-family:var(--serif);font-size:30px;font-weight:800;color:var(--gold);line-height:1;display:inline-block;margin-bottom:12px}
+  .diff h3{font-size:19px;font-weight:800;color:var(--ink);margin-bottom:9px;line-height:1.4}
+  .diff p{font-size:15px;color:#3d4763;line-height:1.7}.diff p b{color:var(--navy-soft)}
+  .diff.wide{grid-column:1 / -1}
+  .track-clari{text-align:center;font-size:clamp(16px,3vw,19px);font-weight:800;color:var(--ink);margin-top:34px}
+  .track-clari .g{color:var(--gold)}
+  .track-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:16px}
+  .track{background:var(--paper);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow-sm);position:relative;transition:transform .18s ease,box-shadow .2s ease}
+  .track:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .track-badge{position:absolute;top:14px;left:14px;z-index:2;font-size:14.5px;font-weight:800;color:#fff;padding:8px 16px;border-radius:999px;box-shadow:0 6px 14px rgba(0,0,0,.28);background:linear-gradient(160deg,#15294f,#213c6c)}
+  .track.t2 .track-badge{background:linear-gradient(160deg,#0f766e,#14b8a6)}
+  .track-top{height:6px}
+  .track.t1 .track-top{background:linear-gradient(90deg,var(--gold),var(--gold-bright))}
+  .track.t2 .track-top{background:linear-gradient(90deg,#0f766e,#2dd4bf)}
+  .track-b{padding:64px 24px 26px}
+  .track-b h3{font-size:21px;font-weight:800;color:var(--ink);line-height:1.3}
+  .track-b h3 .tf{display:block;font-size:14px;font-weight:700;color:var(--muted);margin-top:4px}
+  .track-for{font-size:14px;font-weight:800;color:var(--navy-soft);background:var(--cream-2);border-radius:10px;padding:10px 14px;margin:14px 0}
+  .track.t2 .track-for{color:#0f766e;background:#e6faf5}
+  .track ul{list-style:none}
+  .track li{font-size:14.5px;color:#3d4763;line-height:1.6;padding:8px 0;border-top:1px dashed var(--line)}
+  .track li:first-child{border-top:none}
+  .track li .k{display:inline-block;min-width:44px;color:var(--gold);font-weight:800;margin-right:4px}
+  .track.t2 li .k{color:#0f766e}
+  .track li b{color:var(--navy-soft);font-weight:800}
+  .track .goal{margin-top:12px;font-size:13.5px;color:#586178;background:var(--cream);border-radius:10px;padding:10px 12px;line-height:1.55}
+  .track .goal b{color:var(--ink)}
+
+  /* teacher profile */
+  .tprofile{display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center;margin-top:30px}
+  .tp-photo{width:180px;flex:none;border-radius:20px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);background:linear-gradient(160deg,#e2e7f1,#eef2f8)}
+  .tp-photo img{width:100%;height:auto;object-fit:cover}
+  .tp-name{font-size:24px;font-weight:800;color:var(--ink)}
+  .tp-name span{font-size:14px;color:var(--muted);font-weight:600}
+  .tp-cred{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px}
+  .tp-cred span{font-size:12.5px;font-weight:800;color:#8a6a1e;background:var(--gold-soft);padding:6px 12px;border-radius:999px}
+  .tp-quote{margin-top:16px;font-size:15.5px;color:#3d4763;line-height:1.75;font-style:normal}
+  .tp-quote b{color:var(--ink)}
+  @media (max-width:640px){.tprofile{grid-template-columns:1fr;text-align:center}.tp-photo{margin:0 auto;width:150px}.tp-cred{justify-content:center}}
+
+  .op-list{display:grid;gap:12px;margin-top:30px}
+  .op{display:flex;gap:16px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow-sm);font-size:15.5px;color:#3d4763;line-height:1.6}
+  .op b{color:var(--ink)}
+  .op-ic{flex:none;width:44px;height:44px;border-radius:12px;background:linear-gradient(160deg,var(--gold-bright),var(--gold));display:flex;align-items:center;justify-content:center;font-size:22px}
+
+  .urgency{text-align:center}
+  .urgency p{color:#c3cee2;font-size:16.5px;max-width:600px;margin:18px auto 0}.urgency p b{color:#fff}
+
+  .faq{margin-top:30px;display:grid;gap:12px}
+  details.qa{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow-sm)}
+  details.qa summary{list-style:none;cursor:pointer;padding:20px 22px;font-size:16.5px;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:12px}
+  details.qa summary::-webkit-details-marker{display:none}
+  details.qa summary .qmk{color:var(--gold);font-family:var(--serif);font-size:20px;flex:none}
+  details.qa summary .chev{margin-left:auto;color:var(--gold);transition:transform .2s;flex:none;font-size:18px}
+  details.qa[open] summary{background:var(--cream)}
+  details.qa[open] summary .chev{transform:rotate(180deg)}
+  details.qa .a{padding:2px 22px 22px 54px;font-size:15.5px;color:#3d4763;line-height:1.75}
+  details.qa .a b{color:var(--ink)}
+
+  .final{text-align:center}
+  .final .pull{color:#fff}.final .pull .em{color:var(--gold-bright);border-color:rgba(231,197,109,.5)}
+  .contact-card{background:rgba(255,255,255,.05);border:1px solid rgba(231,197,109,.3);border-radius:20px;padding:34px 26px;margin-top:34px}
+  .phones{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:6px 0 16px}
+  .phone{display:inline-flex;align-items:center;gap:10px;font-size:clamp(19px,4vw,25px);font-weight:800;padding:16px 26px;border-radius:14px;background:linear-gradient(180deg,var(--gold-bright),var(--gold));color:var(--ink);box-shadow:0 14px 30px -14px rgba(231,197,109,.6);transition:transform .15s}
+  .phone.line{background:rgba(255,255,255,.06);color:#fff;border:1px solid rgba(255,255,255,.3);box-shadow:none}
+  .phone:hover{transform:translateY(-2px)}
+  .map-btn{display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:800;padding:12px 22px;border-radius:12px;background:#03c75a;color:#fff;box-shadow:0 12px 26px -14px rgba(3,199,90,.7);transition:transform .15s}
+  .map-btn:hover{transform:translateY(-2px)}
+  .final .addr{color:#b9c6df;font-size:15.5px;line-height:1.8;margin-top:4px}
+  .final .addr a{color:#eaf0fb;border-bottom:1px dotted rgba(231,197,109,.6)}
+  .final .addr .tags{color:var(--gold-bright);font-weight:700;font-size:14px;display:block;margin-top:6px}
+  .final .hours{color:#8ea0c4;font-size:14px;margin-top:12px}
+  footer{background:var(--ink);color:#7f8bab;text-align:center;font-size:13px;padding:26px 20px 96px}
+
+  .sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;gap:10px;padding:10px 12px;background:rgba(12,26,54,.96);backdrop-filter:blur(8px);border-top:1px solid rgba(231,197,109,.32)}
+  .sticky a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:800;padding:14px;border-radius:12px;font-size:15px}
+  .sticky .call{background:linear-gradient(180deg,var(--gold-bright),var(--gold));color:var(--ink)}
+  .sticky .mapx{background:#03c75a;color:#fff;flex:none;padding:14px 18px}
+
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (max-width:720px){
+    section{padding:56px 0}
+    .diffs{grid-template-columns:1fr}
+    .specgrid{grid-template-columns:1fr 1fr}
+    .sticky{display:flex}
+    .story{padding:30px 22px}
+    .vc{font-size:13px;padding:12px 12px}
+    .vs-crit{font-size:11px}
+    .whygrid{grid-template-columns:1fr}
+    .selfcheck-grid{grid-template-columns:1fr}
+  }
+  /* 국어 고착성 데이터 섹션 */
+  .chartcard{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:26px 24px 20px;box-shadow:var(--shadow-sm);margin-top:30px}
+  .chart-title{font-size:17px;font-weight:800;color:var(--ink);text-align:center}
+  .chart-legend{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin:12px 0 6px}
+  .chart-legend .lg{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;color:#4a5470}
+  .chart-legend .lg i{width:22px;height:5px;border-radius:3px;display:inline-block}
+  .chart-legend .lg-gold i{background:linear-gradient(90deg,var(--gold),var(--gold-bright))}
+  .chart-legend .lg-gray i{background:#aeb4c4}
+  .chart-scroll{overflow-x:auto}
+  .curvechart{width:100%;min-width:460px;height:auto;display:block}
+  .chart-note{font-size:12.5px;color:var(--muted);line-height:1.6;margin-top:10px}
+  .chart-note b{color:#586178}
+  .whygrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+  .why{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:22px 20px;box-shadow:var(--shadow-sm)}
+  .why-ic{font-size:30px;margin-bottom:10px}
+  .why h4{font-size:16.5px;font-weight:800;color:var(--ink);line-height:1.4;margin-bottom:8px}
+  .why p{font-size:14.5px;color:#3d4763;line-height:1.65}.why p b{color:var(--navy-soft)}
+  /* 스토리 면책 */
+  .story-disc{font-size:13.5px;line-height:1.65;color:#5a6480;background:#fbf4e6;border:1px dashed var(--gold);border-radius:12px;padding:13px 16px;margin-bottom:16px}
+  .story-disc b{color:#8a6a1e}
+  /* 자가진단 체크리스트 */
+  .selfcheck{margin-top:30px;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:26px 24px;box-shadow:var(--shadow-sm)}
+  .sc-title{font-weight:800;color:var(--ink);font-size:17.5px;margin-bottom:16px}
+  .selfcheck-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .sc-item{position:relative;padding:11px 14px 11px 40px;background:var(--cream);border:1px solid var(--line);border-radius:10px;font-size:14.5px;color:#3d4763;line-height:1.5}
+  .sc-item::before{content:"✓";position:absolute;left:13px;top:50%;transform:translateY(-50%);width:20px;height:20px;border-radius:5px;background:linear-gradient(160deg,var(--gold-bright),var(--gold));color:#fff;font-weight:900;font-size:12px;display:flex;align-items:center;justify-content:center}
+  .sc-item b{color:var(--navy-soft)}
+  .sc-foot{margin-top:14px;font-size:15px;font-weight:700;color:var(--navy-soft);text-align:center}.sc-foot b{color:var(--ink)}
+  /* 같은 강좌 note */
+  .samecourse-note{max-width:760px;margin:20px auto 0;font-size:13.5px;line-height:1.65;color:#0f766e;background:#e6faf5;border:1px solid #b8ede0;border-radius:12px;padding:13px 16px;text-align:center}
+  .samecourse-note b{color:#0b5e57}
+  /* 강사 검증 */
+  .tp-verify{margin-top:16px;padding:15px 18px;background:var(--cream);border:1px solid var(--gold-soft);border-radius:12px;font-size:14px;color:#3d4763;line-height:1.7}
+  .tp-verify b{color:var(--ink)}
+  /* 최종 상담 이유 */
+  .call-reasons{font-size:14.5px;color:#c3cee2;line-height:1.8;margin:0 auto 16px;max-width:520px;text-align:left}
+  .call-reasons b{color:#fff}
+  /* 스티키 문자 버튼 */
+  .sticky .smsx{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(231,197,109,.4);flex:0 0 auto;padding:14px 16px}
+  /* 다올105 국어 — 두 기둥 */
+  .pillars{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:30px}
+  .pillar{border-radius:18px;padding:24px 22px;box-shadow:var(--shadow-sm);border:1px solid var(--line);background:var(--paper);position:relative;overflow:hidden}
+  .pillar::before{content:"";position:absolute;top:0;left:0;width:100%;height:5px}
+  .pillar.p-nae::before{background:linear-gradient(90deg,var(--gold),var(--gold-bright))}
+  .pillar.p-su::before{background:linear-gradient(90deg,#0f766e,#2dd4bf)}
+  .pillar .pl-tag{display:inline-block;font-size:12px;font-weight:800;padding:5px 12px;border-radius:999px;margin-bottom:10px}
+  .pillar.p-nae .pl-tag{background:var(--gold-soft);color:#8a6a1e}
+  .pillar.p-su .pl-tag{background:#e6faf5;color:#0f766e}
+  .pillar h3{font-size:19px;font-weight:800;color:var(--ink);margin-bottom:2px}
+  .pillar .pl-who{font-size:13px;color:var(--muted);font-weight:700;margin-bottom:10px}
+  .pillar p{font-size:14.5px;color:#3d4763;line-height:1.65}.pillar p b{color:var(--navy-soft)}
+  .pl-vs{text-align:center;font-family:var(--serif);font-weight:700;color:var(--ink);font-size:clamp(16px,3vw,20px);margin:24px auto 0}
+  /* 학교 매트릭스 */
+  .matrix{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:18px}
+  .mschool{background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow-sm);display:flex;flex-direction:column}
+  .ms-head{padding:16px 18px;color:#fff;background:linear-gradient(160deg,#15294f,#213c6c)}
+  .mschool.solo .ms-head{background:linear-gradient(160deg,#0f766e,#14b8a6)}
+  .ms-school{font-size:17px;font-weight:800}
+  .ms-range{font-size:12.5px;opacity:.92;margin-top:3px}
+  .ms-range b{color:var(--gold-bright)}
+  .mschool.solo .ms-range b{color:#eafff9}
+  .ms-body{padding:18px;flex:1;display:flex;flex-direction:column;gap:10px}
+  .ms-combo{font-size:13px;font-weight:800;color:var(--navy-soft);background:var(--cream-2);border-radius:8px;padding:8px 12px;text-align:center}
+  .mschool.solo .ms-combo{color:#0f766e;background:#e6faf5}
+  .ms-line{font-size:14px;color:#3d4763;line-height:1.5;padding-left:20px;position:relative}
+  .ms-line::before{content:"→";position:absolute;left:0;color:var(--gold);font-weight:900}
+  .mschool.solo .ms-line::before{color:#0f766e}
+  .ms-line b{color:var(--ink)}
+  .ms-why{margin-top:auto;font-size:13px;color:#586178;line-height:1.6;background:var(--cream);border-radius:10px;padding:11px 13px}
+  .ms-why b{color:var(--navy-soft)}
+  .combo-note{display:flex;gap:14px;align-items:flex-start;margin:22px auto 0;background:linear-gradient(180deg,#fff,#fbf6e7);border:2px solid var(--gold);border-radius:16px;padding:18px 22px;box-shadow:var(--shadow-sm)}
+  .combo-note .cn-ic{flex:none;font-size:24px;line-height:1.3}
+  .combo-note>div{font-size:15px;color:#3d4763;line-height:1.65}.combo-note b{color:var(--ink)}
+  /* 미사고2 시너지 */
+  .synergy{margin-top:26px;background:linear-gradient(160deg,#0c1a36,#17305c);color:#e8eefb;border-radius:20px;padding:30px 26px;box-shadow:var(--shadow)}
+  .synergy h3{color:#fff;font-size:clamp(18px,3.4vw,23px);font-weight:800;line-height:1.4;margin-bottom:14px}
+  .synergy h3 .g{color:var(--gold-bright)}
+  .syn-flow{display:flex;flex-wrap:wrap;align-items:stretch;gap:10px;margin:18px 0;justify-content:center}
+  .syn-node{background:rgba(255,255,255,.07);border:1px solid rgba(231,197,109,.3);border-radius:12px;padding:12px 15px;font-size:13.5px;font-weight:700;color:#eaf0fb;text-align:center;line-height:1.4;display:flex;flex-direction:column;justify-content:center;min-width:150px}
+  .syn-node b{color:var(--gold-bright);display:block;font-size:12px;margin-bottom:3px}
+  .syn-arrow{color:var(--gold);font-weight:900;font-size:20px;display:flex;align-items:center}
+  .synergy p{font-size:14.5px;color:#c3cee2;line-height:1.75}.synergy p b{color:#fff}
+  .syn-note{font-size:12px;color:#8ea0c4;margin-top:12px;line-height:1.55}
+  /* 듀오 프로필 */
+  .duo{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
+  .duocard{background:var(--paper);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow-sm);display:flex;flex-direction:column}
+  .duocard .dc-top{height:6px}
+  .duocard.d-nae .dc-top{background:linear-gradient(90deg,var(--gold),var(--gold-bright))}
+  .duocard.d-su .dc-top{background:linear-gradient(90deg,#0f766e,#2dd4bf)}
+  .dc-body{display:flex;gap:16px;padding:22px 20px 8px;align-items:flex-start}
+  .dc-photo{flex:none;width:100px;height:126px;border-radius:14px;overflow:hidden;background:linear-gradient(160deg,#e2e7f1,#eef2f8)}
+  .dc-photo img{width:100%;height:100%;object-fit:cover;object-position:top center}
+  .dc-role{display:inline-block;font-size:11.5px;font-weight:800;padding:3px 10px;border-radius:999px;margin-bottom:6px}
+  .duocard.d-nae .dc-role{background:var(--gold-soft);color:#8a6a1e}
+  .duocard.d-su .dc-role{background:#e6faf5;color:#0f766e}
+  .dc-name{font-size:19px;font-weight:800;color:var(--ink)}
+  .dc-name span{font-size:13px;color:var(--muted);font-weight:600}
+  .dc-cred{font-size:12.5px;color:#586178;line-height:1.55;margin-top:6px}.dc-cred b{color:var(--ink)}
+  .dc-quote{padding:6px 20px 22px;font-size:14px;color:#3d4763;line-height:1.7}
+  .dc-quote b{color:var(--ink)}
+  @media (max-width:820px){.pillars{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.duo{grid-template-columns:1fr}}
+  @media (max-width:720px){
+    .whygrid{grid-template-columns:1fr}
+    .selfcheck-grid{grid-template-columns:1fr}
+    .curvechart{min-width:330px}
+    .syn-arrow{transform:rotate(90deg)}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+  /* 히어로 프레임 사진 */
+  .hero-frame{width:min(100%,300px);aspect-ratio:4/5;border-radius:20px;overflow:hidden;border:1px solid rgba(231,197,109,.4);box-shadow:0 22px 46px -18px rgba(0,0,0,.6);position:relative;z-index:2}
+  .hero-frame img{width:100%;height:100%;object-fit:cover;object-position:top center}
+  @media (max-width:820px){.hero-frame{width:230px;margin:0 auto}}
+  /* 성과 */
+  .results{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:28px}
+  .res{display:flex;align-items:center;gap:12px;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:17px 20px;box-shadow:var(--shadow-sm)}
+  .res .who{font-size:14.5px;color:var(--muted);font-weight:700}
+  .res .val{font-size:clamp(16px,3vw,20px);font-weight:900;margin-left:auto;white-space:nowrap}
+  .res .val.g1{color:#b9975c}
+  .res .val.up{color:#2f7d4f}
+  /* 전용 교재 */
+  .books{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px}
+  .book{background:linear-gradient(180deg,#fff,#fbf7ee);border:1px solid var(--line);border-radius:16px;padding:22px 14px;text-align:center;box-shadow:var(--shadow-sm)}
+  .book .bk-ic{font-size:32px;margin-bottom:8px}
+  .book .bk-name{font-size:15px;font-weight:800;color:var(--ink);line-height:1.35}
+  .book .bk-desc{font-size:11.5px;color:var(--gold);font-weight:800;letter-spacing:.04em;margin-top:4px}
+  @media (max-width:640px){.results{grid-template-columns:1fr}.books{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+
+<div class="ticker"><span class="dot"></span><b>미사강변고 영어(고1·고2)</b>, 겉보기와 다릅니다 — 통암기로는 안 되는 <b>변별형 시험</b>입니다</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="badge-row">
+          <span class="badge solid">다올105 × 민귀홍영어</span>
+          <span class="badge">미사강변고 영어 내신</span>
+          <span class="badge">MINGUIHONGENGLISH</span>
+        </div>
+        <h1>미사강변고 영어는,<br /><span class="q">외워서 될 시험이 아닙니다.</span></h1>
+        <p class="sub">미사강변고 영어(<b>고1·고2</b>)는 선지의 매력도와 어휘 변형으로 <b>변별력을 극한으로</b> 끌어올린 시험입니다. 고1은 서술형(요약문 빈칸) 함정, 고2는 주관식마저 없앤 객관식 선지 변별 — 방식은 달라도, 단순히 본문을 통암기한 학생은 <b>변형된 선지와 낯선 어휘의 벽</b>에 막힙니다.</p>
+        <p class="micro">📘 영어 등급은 '외운 양'이 아니라 <span>선지를 걸러내는 힘</span>에서 갈립니다.</p>
+        <div class="cta-row">
+          <a class="btn btn-gold" href="tel:031-699-8111">☎ 우리 아이 영어 진단 상담 (무료)</a>
+          <a class="btn btn-ghost" href="https://map.naver.com/p/entry/place/1962162458?placePath=%252Fhome%253Fentry%253Dplt&amp;searchType=place&amp;lng=127.1855549&amp;lat=37.5682984&amp;c=15.00,0,0,0,dh" target="_blank" rel="noopener">🗺 오시는 길</a>
+        </div>
+      </div>
+      <div class="hero-pic">
+        <img src="img/민귀홍_누끼_new.png" alt="민귀홍 선생님" loading="lazy">
+        <div class="hero-cred"><b>민귀홍 선생님</b><span>한양대 영어영문 · 민귀홍영어<br>다올105 영어 대표강사</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- SPEC CARDS -->
+<section class="specband">
+  <div class="wrap">
+    <div class="specgrid">
+      <div class="speccard"><div class="spec-ic">🎓</div><div><div class="spec-k">대상</div><div class="spec-v">미사강변고 고1·고2</div><div class="spec-s">영어 내신 + 정시</div></div></div>
+      <div class="speccard"><div class="spec-ic">🧑‍🏫</div><div><div class="spec-k">강사</div><div class="spec-v">민귀홍영어</div><div class="spec-s">한양대 영어영문학과</div></div></div>
+      <div class="speccard"><div class="spec-ic">📚</div><div><div class="spec-k">방식</div><div class="spec-v">정규 + 클리닉</div><div class="spec-s">개념·유형 + 학교별 밀착</div></div></div>
+      <div class="speccard"><div class="spec-ic">🗂</div><div><div class="spec-k">운영</div><div class="spec-v">인원 제한 운영</div><div class="spec-s">상담 후 반 배정</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="paper">
+  <div class="wrap narrow reveal">
+    <p class="eyebrow">시험이 바뀌는 순간</p>
+    <h2 class="sec">"외우면 된다"는 믿음이,<br />미사강변고에선 통하지 않습니다.</h2>
+    <p class="lead">단어와 본문을 외우면 점수가 나온다고 생각하기 쉽습니다. 하지만 <b style="color:var(--ink)">미사강변고 영어</b>는 다릅니다.<br /><br />
+    출제진은 <b style="color:var(--ink)">선지의 매력도를 극한으로</b> 끌어올리고, 지문·단어·문제 형식을 <b style="color:var(--ink)">변형해</b> 출제합니다. <b style="color:var(--ink)">고1은 서술형(요약문 빈칸)의 함정</b>으로, <b style="color:var(--ink)">고2는 주관식마저 없앤 객관식 선지 변별</b>로 — 방식은 달라도 <b style="color:var(--ink)">학년 불문 '통암기 필패'</b>입니다.<br /><br />
+    문제는 '무엇을 외웠는가'가 아니라, <span class="hl">'선지의 논리를 걸러낼 수 있는가'</span>입니다.</p>
+  </div>
+</section>
+
+<!-- 시험 분석 리포트 -->
+<section class="cream2">
+  <div class="wrap reveal">
+    <div class="narrow" style="text-align:center">
+      <p class="eyebrow" style="justify-content:center">민귀홍영어의 시험 분석</p>
+      <h2 class="sec">미사강변고 영어,<br />이렇게 설계된 시험입니다</h2>
+      <p class="lead">겉보기 난이도와 실제 변별 포인트는 달랐습니다. <b style="color:var(--ink)">최근 고2 시험</b>을 예로, 성패를 가른 두 가지 핵심을 짚어보겠습니다. <span style="font-size:.92em">(고1 서술형 분석은 아래에서 이어집니다.)</span></p>
+    </div>
+
+    <div class="analogy" style="grid-template-columns:1fr 1fr;margin-top:30px">
+      <div class="card"><div class="emo">🧠</div><h3>① 학술 지문의 논리 + 킬러 어휘 변형</h3><p>위성 기술·공룡·뇌 과학·자연 선택론 등 <b style="color:var(--ink)">학술적 지문</b>이 대거 포진했습니다. 출제진은 핵심 키워드를 그대로 내지 않고, <b style="color:var(--ink)">본문에 쓰이지 않은 수능형 어휘</b>(예: redundant, exploit the system)나 반의어 관계로 빈칸·어휘 유형을 배치했습니다. '왜 이 단어가 올 수밖에 없는가'의 인과·논리를 못 잡은 학생은 고배점에서 여지없이 미끄러졌습니다.</p></div>
+      <div class="card"><div class="emo">🎯</div><h3>② 매력적 오답을 걸러내는 선지 변별력</h3><p>서술형이 없다 보니 등급을 가른 정점은 결국 <b style="color:var(--ink)">'선지 분석'</b>이었습니다. 주제·요지(1~6번)와 요약문(20~22번)에서 핵심 소재를 매력적으로 배치하되, <b style="color:var(--ink)">핵심 논리를 비틀거나 지엽적인 부분을 정답처럼 포장</b>한 수능형 낚시 선지가 많았습니다. 소거법으로 선지의 논리 오류를 잡는 훈련이 안 된 학생은 안정적 1등급을 받기 어려웠습니다.</p></div>
+    </div>
+
+    <div class="whygrid" style="margin-top:22px">
+      <div class="why"><div class="why-ic">📊</div><h4>난이도 분포</h4><p><b>하 10 · 중 13 · 상 4</b> (총 27문항). 객관식 100%임에도 4점대 고배점을 <b>어휘·어법·함축의미</b>에 집중 배치했습니다.</p></div>
+      <div class="why"><div class="why-ic">✂️</div><h4>1등급 예상 커트라인</h4><p><b>80점 후반.</b> 한 문항의 실수가 등급을 가르는 구간 — 함축의미 추론(26번)과 복수 선택형 어법(27번)이 상위권을 스크리닝했습니다.</p></div>
+      <div class="why"><div class="why-ic">⏱️</div><h4>숨은 함정 · 타임어택</h4><p>중난도 <b>순서·삽입(7~10번)</b>이 연달아 배치돼, 지문 흐름을 유기적으로 못 잡은 학생은 시간에 쫓기며 체감 난이도가 급상승했습니다.</p></div>
+    </div>
+
+    <p class="compare-note narrow" style="text-align:center">※ 최근 <b>고2 시험</b> 기준 · 출제범위: 고등영어1 미래(엔) 교과서 4·5과 + 수능특강Light 영어독해연습(2·5·10강, Minitest1). 위 분석은 민귀홍영어가 실제 시험을 분석한 내용입니다.</p>
+  </div>
+</section>
+
+<!-- 악순환 진단 -->
+<section class="paper">
+  <div class="wrap narrow reveal">
+    <p class="eyebrow">미사강변고의 진짜 문제</p>
+    <h2 class="sec">미사강변고는,<br />'암기'만으론 안 되는 학교입니다</h2>
+    <p class="lead">미사강변고 영어는 선지의 난이도와 어휘 변형 때문에 <b style="color:var(--ink)">단순 암기로는 해결되지 않는 학교</b>입니다. 그런데 대부분의 학생은 내신 대비를 여전히 '암기'로만 합니다.<br /><br />
+    그 결과 — <b style="color:var(--ink)">지문이 조금만 변형되거나 선지가 비틀리면 실수가 반복되는 악순환</b>에 빠집니다. 열심히 외웠는데도 점수가 안 나오는 이유가 바로 여기 있습니다.</p>
+    <blockquote class="tip"><b>민귀홍영어는 이 악순환을 끊습니다.</b> 암기 대신 '선지를 읽는 논리'를 세우고, 그럼에도 <b>내신 적중률은 계속 높여 왔습니다.</b> 미강고 시험을 매번 분석하고 반복 훈련하는 이유입니다.</blockquote>
+  </div>
+</section>
+
+<!-- 성과 -->
+<section class="cream2">
+  <div class="wrap narrow reveal">
+    <div style="text-align:center">
+      <p class="eyebrow" style="justify-content:center">실시간 후기 및 성과</p>
+      <h2 class="sec">전략대로 훈련한 미강고2,<br />이렇게 결과가 나왔습니다</h2>
+      <p class="lead">이번 미사강변고 2학년은 1학년보다 <b style="color:var(--ink)">더 급격한 성적 향상</b>이 있었습니다. 특히 학원을 막 옮긴 <b style="color:var(--ink)">신규생이 대부분 상승</b>했습니다.</p>
+    </div>
+    <div class="results">
+      <div class="res"><span class="who">미강고2 · 장O후</span><span class="val g1">1등급 확정</span></div>
+      <div class="res"><span class="who">미강고2 · 이O준</span><span class="val g1">2등급 확정</span></div>
+      <div class="res"><span class="who">미강고2 · 김O연</span><span class="val up">+25점 ↑</span></div>
+      <div class="res"><span class="who">미강고2 · 최O윤</span><span class="val up">+25점 ↑</span></div>
+      <div class="res"><span class="who">미강고2 · 김O영</span><span class="val up">+25점 ↑</span></div>
+      <div class="res"><span class="who">미강고2 · 김O경</span><span class="val up">+30점 ↑</span></div>
+    </div>
+    <p class="compare-note narrow" style="text-align:center">※ 외에도 현재 계속해서 점수를 취합 중입니다. 다올105 × 민귀홍영어 자체 집계 결과이며, 성적 향상 폭은 개인마다 다를 수 있습니다.</p>
+  </div>
+</section>
+
+<!-- 서술형 함정 -->
+<section class="paper">
+  <div class="wrap reveal">
+    <div class="narrow" style="text-align:center">
+      <p class="eyebrow" style="justify-content:center">서술형 20점 · 아는데 틀리는 이유</p>
+      <h2 class="sec">미강고 1학년, 등수는<br />'서술형 20점'에서 갈립니다</h2>
+      <p class="lead">미강고 1학년 영어의 등수는 <b style="color:var(--ink)">서술형 20점(요약문 빈칸 채우기)</b>과 뒷번호 고배점에서 갈립니다. <span style="font-size:.92em">(고2는 주관식이 없는 대신 객관식 선지 변별로 갈립니다.)</span> 아는데도 틀리는 이유 — 두 가지 함정이 숨어 있습니다.</p>
+    </div>
+    <div class="analogy" style="grid-template-columns:1fr 1fr;margin-top:26px">
+      <div class="card"><div class="emo">✂️</div><h3>아는데도 서술형에서 감점되는 이유</h3><p>내용을 맞게 썼는데도 점수를 잃는 경우가 대부분입니다. <b style="color:var(--ink)">&lt;보기&gt; 조건(단어 수·형태·중복 사용 등)을 하나만 놓쳐도 감점</b>되기 때문입니다. '아는 것'과 '조건까지 지켜 쓰는 것'은 전혀 다른 능력입니다.</p></div>
+      <div class="card"><div class="emo">✅</div><h3>서술형 20점은 사실 '만점 구간'입니다</h3><p>조건만 정확히 지키면, 서술형 20점은 <b style="color:var(--ink)">안정적으로 확보할 수 있는 구간</b>입니다. 민귀홍영어는 <b style="color:var(--ink)">&lt;서술형 특별훈련&gt;</b> 자료로 감점 포인트를 유형별로 반복 점검해, 서술형을 '실수 구간'이 아니라 '만점 구간'으로 바꿉니다.</p></div>
+    </div>
+    <p class="compare-note narrow" style="text-align:center">※ 서술형 조건은 학교·연도마다 바뀝니다. 민귀홍영어는 실제 미강고 시험지를 분석해, 바뀌는 조건까지 &lt;서술형 특별훈련&gt;으로 대비합니다.</p>
+  </div>
+</section>
+
+<!-- ANALOGY -->
+<section class="cream2">
+  <div class="wrap narrow reveal">
+    <p class="eyebrow">왜 통암기만으론 부족할까요</p>
+    <h2 class="sec">🗺 '한글 뜻만 외운 지도'로<br />낯선 길을 찾을 수 있을까요?</h2>
+    <p class="lead">한 여행자가 지도를 통째로 외웠습니다. 익숙한 길은 잘 찾아갑니다. 그런데 도로 하나가 바뀌자, 외운 지도가 아무 소용이 없어졌습니다.</p>
+    <div class="analogy">
+      <div class="card"><div class="emo">🧩</div><h3>외운 길 밖에선 헤맨다</h3><p>지도를 외운 것과, <b style="color:var(--ink)">처음 보는 갈림길에서 방향을 판단하는 것</b>은 전혀 다른 능력입니다. 길이 살짝만 바뀌어도(=변형된 선지) 외운 지도는 무너집니다.</p></div>
+      <div class="card"><div class="emo">📘</div><h3>영어도 똑같습니다</h3><p>지문을 한글 뜻으로 통암기하면, 선지가 살짝 비틀리는 순간 무너집니다. 아는 지문을 얼마나 외웠는가가 아니라, <b style="color:var(--ink)">낯선 선지 앞에서 어떤 논리로 정오를 가리는가</b>가 진짜 실력입니다.</p></div>
+    </div>
+    <blockquote class="tip"><b>통암기는 '길 외우기'입니다.</b> 정해진 길에서는 누구나 잘 갑니다. 하지만 <b>시험은 매번 길을 살짝 바꿔 냅니다.</b> 외운 길만 아는 학생은, 갈림길(매력적 오답)에서 가장 먼저 헤맵니다.</blockquote>
+    <p class="pull">그런데 지금도 수많은 아이들이<br /><span class="em">여전히 한글 뜻만</span> 외우고 있습니다.</p>
+  </div>
+</section>
+
+<!-- VS COMPARE -->
+<section class="paper">
+  <div class="wrap reveal">
+    <div class="narrow" style="text-align:center">
+      <p class="eyebrow" style="justify-content:center">우리 아이는 어느 쪽인가요</p>
+      <h2 class="sec">🥊 한눈에 비교<br />통암기한 아이 vs 선지 변별력을 키운 아이</h2>
+      <p class="lead">막연한 불안이 아니라, 이번 미강고 시험에서 <b style="color:var(--ink)">실제로 등급을 가른 장면</b>으로 비교해 보겠습니다.</p>
+    </div>
+
+    <div class="vs-wrap">
+      <div class="vs-head">
+        <div class="vs-team other"><div class="vt-cap">통암기 중심</div><div class="vt-sub">본문 한글 뜻 암기</div></div>
+        <div class="vs-team daol"><div class="vt-cap">선지 변별력 병행</div><div class="vt-sub">민귀홍영어 · 소거법 훈련</div></div>
+        <div class="vs-badge">VS</div>
+      </div>
+      <div class="vs-body">
+        <div class="vsrow"><div class="vs-crit">변형된 선지</div><div class="vs-cells">
+          <div class="vc other"><span class="x">✕</span>본문과 조금만 달라도 감으로 찍음</div>
+          <div class="vc daol"><span class="v">✓</span><b>소거법</b>으로 선지의 논리 오류를 걸러냄</div></div></div>
+        <div class="vsrow"><div class="vs-crit">본문 밖 킬러 어휘</div><div class="vs-cells">
+          <div class="vc other"><span class="x">✕</span>처음 보는 수능형 어휘에 당황</div>
+          <div class="vc daol"><span class="v">✓</span>반의어·<b>수능형 어휘</b>까지 미리 훈련</div></div></div>
+        <div class="vsrow"><div class="vs-crit">주제·요약문 낚시 선지</div><div class="vs-cells">
+          <div class="vc other"><span class="x">✕</span>매력적으로 포장된 오답에 걸림</div>
+          <div class="vc daol"><span class="v">✓</span><b>핵심 논리</b>로 함정 선지를 제거</div></div></div>
+        <div class="vsrow"><div class="vs-crit">순서·삽입 연속 배치</div><div class="vs-cells">
+          <div class="vc other"><span class="x">✕</span>흐름을 놓쳐 타임어택에 무너짐</div>
+          <div class="vc daol"><span class="v">✓</span><b>논리적 흐름</b>으로 빠르게 처리</div></div></div>
+        <div class="vsrow"><div class="vs-crit">고배점 함축의미</div><div class="vs-cells">
+          <div class="vc other"><span class="x">✕</span>감으로 찍고 고배점을 잃음</div>
+          <div class="vc daol"><span class="v">✓</span>'왜 이 의미인가' 인과로 <b>확정</b></div></div></div>
+      </div>
+      <div class="vs-concl">
+        <div class="big">결론 — <span class="g">'외운 양'</span> vs <span class="g">'걸러내는 힘'</span></div>
+        <div class="small">영어 등급은 본문을 얼마나 외웠는가가 아니라, 낯선 선지의 논리를 얼마나 걸러낼 수 있는가로 갈립니다.</div>
+        <div class="cta-row" style="justify-content:center;margin-top:20px"><a class="btn btn-gold" href="tel:031-699-8111">☎ 우리 아이는 어느 쪽인지 상담하기</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFFS -->
+<section class="cream2">
+  <div class="wrap reveal">
+    <div class="narrow" style="text-align:center">
+      <p class="eyebrow" style="justify-content:center">그래서, 이렇게 가르칩니다</p>
+      <h2 class="sec">감으로 찍던 영어를,<br />'논리'로 푸는 수업</h2>
+    </div>
+    <div class="diffs">
+      <div class="diff"><span class="num">1</span><h3>통암기가 아니라 '논리적 구조화'</h3><p>지문을 한글로 외우는 대신, <b>'왜 이 단어·이 선지가 정답인가'</b>의 인과와 논리 뼈대를 스스로 세우게 훈련합니다. 변형된 선지에도 흔들리지 않는 기준을 만듭니다.</p></div>
+      <div class="diff"><span class="num">2</span><h3>소거법으로 '매력적 오답' 제거</h3><p>매력적으로 포장된 함정 선지를 <b>논리 오류 기준</b>으로 걸러내는 선지 변별 훈련. 주제·요지·요약문의 낚시 선지를 소거법으로 처리하는 루틴을 반복합니다.</p></div>
+      <div class="diff"><span class="num">3</span><h3>킬러 어휘·어법을 정조준</h3><p>본문에 없는 <b>수능형 어휘, 반의어 관계</b>, 고배점 어법(복수 선택형)까지 — 이번 시험처럼 변별 포인트가 되는 지점을 미리 훈련해 고배점을 지킵니다.</p></div>
+      <div class="diff"><span class="num">4</span><h3>정규 + 클리닉 이원화</h3><p><b>정규 수업</b>으로 개념·유형을 세우고, <b>클리닉</b>으로 학교별 시험 대비와 약점 보강을 밀착 관리합니다. 학년별로 시간표를 나눕니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 시험대비전략 -->
+<section class="paper">
+  <div class="wrap reveal">
+    <div class="narrow" style="text-align:center">
+      <p class="eyebrow" style="justify-content:center">미사강변고 시험대비전략</p>
+      <h2 class="sec">정해진 패턴엔,<br />정해진 전략이 있습니다</h2>
+      <p class="lead">미사강변고 영어는 정해진 출제 패턴이 있습니다. <b style="color:var(--ink)">전략대로 훈련한 학생에게는 확실한 보상</b>이 주어지는 시험입니다.</p>
+    </div>
+    <div class="whygrid">
+      <div class="why"><div class="why-ic">📝</div><h4>어법·어휘 난이도 상승 대비</h4><p>표제어뿐 아니라 <b>동의어·반의어·파생어까지</b> 철저히 암기해 지문 변형에 완벽 대비합니다. (2학기 중간고사는 더 어려울 것으로 예상)</p></div>
+      <div class="why"><div class="why-ic">🎯</div><h4>모의고사식 유형·풀이법 체화</h4><p>내신 기간에도 <b>모의고사식 논리 훈련</b>으로 기본기를 끌어올리고, 빈칸·삽입·순서 등 <b>유형별 실전 풀이법</b>을 빌드업합니다.</p></div>
+      <div class="why"><div class="why-ic">🧠</div><h4>감이 아닌 '논리독해 → 선지 변별력'</h4><p>지문뿐 아니라 <b>선지에서 오답을 확실히 걸러내는 힘</b> — 이번 기말 고득점의 치트키였고, 다음 시험의 핵심입니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 전용 커리큘럼(교재) -->
+<section class="cream2">
+  <div class="wrap reveal">
+    <div class="narrow" style="text-align:center">
+      <p class="eyebrow" style="justify-content:center">미사강변고만을 위한 커리큘럼</p>
+      <h2 class="sec">미강고 전용 자료로,<br />시험을 정조준합니다</h2>
+      <p class="lead">시중 교재가 아니라, <b style="color:var(--ink)">미사강변고 시험을 겨냥해 자체 제작한 자료</b>로 대비합니다.</p>
+    </div>
+    <div class="books">
+      <div class="book"><div class="bk-ic">📘</div><div class="bk-name">내신분석서</div><div class="bk-desc">FOCUS ON</div></div>
+      <div class="book"><div class="bk-ic">📗</div><div class="bk-name">학력평가분석서</div><div class="bk-desc">TRINITY</div></div>
+      <div class="book"><div class="bk-ic">📓</div><div class="bk-name">내신 워크북</div><div class="bk-desc">FOCUS BOOK</div></div>
+      <div class="book"><div class="bk-ic">📙</div><div class="bk-name">최종정리 포켓북</div><div class="bk-desc">POCKET BOOK</div></div>
+      <div class="book"><div class="bk-ic">🗞️</div><div class="bk-name">미강고 내신주간지</div><div class="bk-desc">WEEKLY</div></div>
+      <div class="book"><div class="bk-ic">✍️</div><div class="bk-name">서술형 특별훈련</div><div class="bk-desc">서술형 대비</div></div>
+      <div class="book"><div class="bk-ic">📄</div><div class="bk-name">파이널 동형 모의고사</div><div class="bk-desc">적중 모의 3회</div></div>
+      <div class="book"><div class="bk-ic">🎁</div><div class="bk-name">파이널 Wrap-Up</div><div class="bk-desc">적중 자료</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 24시간 관리 -->
+<section class="paper">
+  <div class="wrap reveal">
+    <div class="narrow" style="text-align:center">
+      <p class="eyebrow" style="justify-content:center">24시간 질의응답 · 줌 스터디</p>
+      <h2 class="sec">수업이 끝나도,<br />관리는 끝나지 않습니다</h2>
+      <p class="lead">학생의 성적 향상을 위해 밤낮을 가리지 않고 개별 관리를 진행합니다. 영어뿐 아니라 <b style="color:var(--ink)">공부 습관·계획·루틴 점검</b>까지 함께합니다.</p>
+    </div>
+    <div class="whygrid">
+      <div class="why"><div class="why-ic">💻</div><h4>줌(Zoom) 독서실</h4><p>정해진 시간에 함께 접속해 <b>공부 환경</b>을 만듭니다. 혼자서 무너지지 않도록 관리합니다.</p></div>
+      <div class="why"><div class="why-ic">📋</div><h4>학생 1:1 개별관리 리포트</h4><p>매 수업마다 <b>출결·과제·테스트</b>를 정리해 학부모님께 리포트로 공유합니다.</p></div>
+      <div class="why"><div class="why-ic">💬</div><h4>24시간 온라인 질의응답</h4><p>모르는 문제는 <b>밤 시간에도</b> 카톡으로 질문 — 문법·해석까지 바로 답해 드립니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 여름방학 함정 -->
+<section class="cream2">
+  <div class="wrap reveal">
+    <div class="narrow" style="text-align:center">
+      <p class="eyebrow" style="justify-content:center">여름방학, 어디서 공부하시나요</p>
+      <h2 class="sec">방학 때 헛도는 공부 vs<br />점수로 이어지는 공부</h2>
+      <p class="lead">방학은 격차가 가장 크게 벌어지는 구간입니다. 그런데 많은 학생이 <b style="color:var(--ink)">'열심히 했는데 점수로 안 이어지는'</b> 방식으로 시간을 보냅니다.</p>
+    </div>
+    <div class="vs-wrap">
+      <div class="vs-head">
+        <div class="vs-team other"><div class="vt-cap">자기주도 · 학군지 썸머스쿨</div><div class="vt-sub">대치·송파 원정 포함</div></div>
+        <div class="vs-team daol"><div class="vt-cap">다올105 × 민귀홍영어</div><div class="vt-sub">미강고 로컬 밀착</div></div>
+        <div class="vs-badge">VS</div>
+      </div>
+      <div class="vs-body">
+        <div class="vsrow"><div class="vs-crit">공부 내용</div><div class="vs-cells">
+          <div class="vc other"><span class="x">✕</span>인강 시청·기준 없는 문제풀이로 끝남</div>
+          <div class="vc daol"><span class="v">✓</span><b>미강고 시험</b>을 겨냥한 명확한 커리큘럼</div></div></div>
+        <div class="vsrow"><div class="vs-crit">우리 학교 연관성</div><div class="vs-cells">
+          <div class="vc other"><span class="x">✕</span>내 학교와 무관한 공부 + 통학시간 낭비</div>
+          <div class="vc daol"><span class="v">✓</span><b>미강고 전용 자료</b>로 학교를 정조준</div></div></div>
+        <div class="vsrow"><div class="vs-crit">테스트·관리 강도</div><div class="vs-cells">
+          <div class="vc other"><span class="x">✕</span>단어테스트 강도 낮고 관리가 느슨함</div>
+          <div class="vc daol"><span class="v">✓</span><b>단어테스트·과제</b>를 남겨 끝까지 관리</div></div></div>
+        <div class="vsrow"><div class="vs-crit">학생 이해도</div><div class="vs-cells">
+          <div class="vc other"><span class="x">✕</span>100명 수업 — 학생 개별 이해 부족</div>
+          <div class="vc daol"><span class="v">✓</span><b>1:1 개별관리</b>로 아이를 정확히 파악</div></div></div>
+      </div>
+      <div class="vs-concl">
+        <div class="big"><span class="g">지금부터</span> 밸런스 있게 쌓는 것이 <span class="g">유일한 해답</span></div>
+        <div class="small">미강고는 수능최저를 놓쳐 입결이 아쉬운 학교입니다. "고3 때 몰아서"는 재수생 비율·고3 1학기 내신·수시 준비에 밀려 사실상 어렵습니다. 지금부터 내신과 모의고사를 함께 잡아야 합니다.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 트랙 -->
+<section class="paper">
+  <div class="wrap reveal">
+    <div class="narrow" style="text-align:center">
+      <p class="eyebrow" style="justify-content:center">우리 아이 학년에 맞는 반</p>
+      <h2 class="sec">미사강변고 영어, 학년별로 나눕니다</h2>
+      <p class="lead">정규로 개념·유형을 세우고, 클리닉으로 학교 시험을 정조준합니다. 학년에 맞는 반을 골라 시작하세요.</p>
+    </div>
+    <p class="track-clari"><span class="g">미강고 고1·고2</span> · 강사 민귀홍</p>
+    <div class="track-grid">
+      <div class="track t1">
+        <div class="track-top"></div>
+        <span class="track-badge">미강고1 영어</span>
+        <div class="track-b">
+          <h3>미사강변고 1학년 영어<span class="tf">목(정규) 18:00~21:00 + 뒤 1시간 클리닉 / 일(클리닉) 14:00~17:00</span></h3>
+          <div class="track-for">✓ 미강고 영어 내신을 효율적으로 대비하고 싶은 고1</div>
+          <ul>
+            <li><span class="k">신호</span> 통암기해도 <b>시험만 보면 미끄러지는</b> 학생</li>
+            <li><span class="k">신호</span> 변형된 선지·<b>낯선 어휘</b>에 약한 학생</li>
+            <li><span class="k">신호</span> 단순 암기가 아닌 <b>내용으로 스스로 푸는 힘</b>을 기르고 싶은 학생</li>
+            <li><span class="k">신호</span> 내신영어뿐 아니라 <b>정시(수능)까지</b> 함께 잡고 싶은 학생</li>
+          </ul>
+          <div class="goal">🎯 목표 — 2026년 미강고 내신 완벽 마무리 + <b>논리적 구조화·선지 변별력</b> 확립(정규), 학교 시험 밀착 대비(클리닉)</div>
+        </div>
+      </div>
+      <div class="track t2">
+        <div class="track-top"></div>
+        <span class="track-badge">미강고2 영어</span>
+        <div class="track-b">
+          <h3>미사강변고 2학년 영어<span class="tf">일(정규) 14:00~17:00 + 뒤 1시간 클리닉 / 목(클리닉) 18:00~21:00</span></h3>
+          <div class="track-for">✓ 브릿지 기간에 <b>내신과 정시</b>를 함께 완성하려는 고2</div>
+          <ul>
+            <li><span class="k">신호</span> 이번 시험처럼 <b>매력적 오답·낚시 선지</b>에 자주 걸리는 학생</li>
+            <li><span class="k">신호</span> 본문 밖 <b>킬러 어휘·고배점 어법</b>에서 점수를 잃는 학생</li>
+            <li><span class="k">신호</span> 순서·삽입 등에서 <b>타임어택</b>에 흔들리는 학생</li>
+            <li><span class="k">신호</span> 내신영어뿐 아니라 <b>정시까지</b> 완벽하게 잡고 싶은 학생</li>
+          </ul>
+          <div class="goal">🎯 목표 — 내신 심화 + <b>선지 변별력·소거법</b> 완성(정규), 고배점(어휘·어법·함축의미) 집중 보강(클리닉)</div>
+        </div>
+      </div>
+    </div>
+    <p class="samecourse-note narrow">※ 정규는 개념·유형 완성, 클리닉은 학교 시험 대비·약점 보강입니다. 정확한 시간·수강료·개강 일정은 전화 상담 시 안내해 드립니다.</p>
+  </div>
+</section>
+
+<!-- 강사 프로필 -->
+<section class="cream2">
+  <div class="wrap reveal">
+    <div class="narrow" style="text-align:center">
+      <p class="eyebrow" style="justify-content:center">이 수업을 만드는 사람</p>
+      <h2 class="sec">🧑‍🏫 민귀홍영어의<br />'선지 변별' 수업</h2>
+    </div>
+    <div class="tprofile narrow">
+      <div class="tp-photo"><img src="img/민귀홍_누끼_new.png" alt="민귀홍 선생님"></div>
+      <div>
+        <div class="tp-name">민귀홍 <span>선생님</span></div>
+        <div class="tp-cred">
+          <span>한양대학교 영어영문학과</span>
+          <span>다올105 영어 대표강사</span>
+          <span>민귀홍영어 · MINGUIHONGENGLISH</span>
+          <span>미사강변고 영어 내신 전문</span>
+        </div>
+        <p class="tp-quote">"저는 지문을 한글 뜻으로 외우게 하지 않습니다. 학생이 <b>낯선 선지 앞에서 스스로 논리 오류를 걸러내는 힘</b>을 만드는 수업을 합니다. 왜 이 단어가 정답인지, 어떤 선지가 매력적으로 포장된 함정인지 — 그 판단 기준을 학교 시험과 수능 기출로 훈련시킵니다."</p>      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 운영 -->
+<section class="paper">
+  <div class="wrap reveal">
+    <div class="narrow" style="text-align:center">
+      <p class="eyebrow" style="justify-content:center">지금 시작해야 하는 이유</p>
+      <h2 class="sec">선지 변별력은,<br />하루아침에 만들어지지 않습니다</h2>
+    </div>
+    <div class="op-list narrow">
+      <div class="op"><div class="op-ic">🧩</div><div><b>미사강변고 시험이 '통암기 필패'를 증명했습니다</b> — 선지의 매력도와 어휘 변형으로 변별력이 극한까지 올라갔습니다. 다음 시험은 더 정교해질 가능성이 큽니다. 대비 방식 자체를 바꿔야 합니다.</div></div>
+      <div class="op"><div class="op-ic">⏳</div><div><b>선지 변별력은 반복 훈련으로만 붙습니다</b> — 소거법, 킬러 어휘, 논리적 구조화는 하루아침에 생기지 않습니다. 시험 2주 전에 시작하면 이미 늦습니다.</div></div>
+      <div class="op"><div class="op-ic">📈</div><div><b>내신과 정시(수능)는 결국 같은 힘입니다</b> — 학교 시험이 수능형으로 출제되는 지금, 선지 분석력은 내신과 정시를 동시에 끌어올리는 하나의 무기입니다.</div></div>
+      <div class="op"><div class="op-ic">🎯</div><div><b>학년이 낮을수록 여유가 있을 때 기준을 잡아야 합니다</b> — 고3이 되어 실전 감각과 기본기를 동시에 잡으려 하면 시간이 부족합니다. 지금이 가장 좋은 출발점입니다.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- URGENCY -->
+<section class="navy-sec" style="background:linear-gradient(160deg,#0a1730,#122a52)">
+  <div class="wrap narrow urgency reveal">
+    <p class="eyebrow" style="justify-content:center">잊지 말아야 할 사실 하나</p>
+    <h2 class="sec" style="margin-bottom:6px">외운 것은 잊혀도,<br />선지를 읽는 힘은 남습니다</h2>
+    <p style="max-width:600px;margin:0 auto"><b>미사강변고 영어(고1·고2)</b>는 이미 그것을 증명했습니다. 겉보기 난이도와 달리 <b>선지의 매력도와 어휘 변형</b>으로 변별력이 극한까지 올라갔고, 통암기만 한 학생은 그 벽에 막혔습니다. "조금 더 지켜볼게요" 하며 한 학기를 미루는 사이, 아이의 영어 습관은 그대로 굳어갑니다.</p>
+    <div class="cta-row" style="justify-content:center;margin-top:26px"><a class="btn btn-gold" href="tel:031-699-8111">☎ 지금 전화로 상담하기</a></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="paper">
+  <div class="wrap narrow reveal">
+    <p class="eyebrow">자주 묻는 질문</p>
+    <h2 class="sec">FAQ</h2>
+    <div class="faq">
+      <details class="qa"><summary><span class="qmk">Q</span>우리 애는 단어·본문을 열심히 외우는데도 영어 점수가 안 올라요.<span class="chev">⌄</span></summary><div class="a">그게 바로 이 수업의 핵심입니다. 이번 미강고 시험처럼 <b>본문을 통암기해도 변형된 선지·낯선 어휘 앞에서 무너지는</b> 경우가 많습니다. 민귀홍영어는 암기가 아니라 <b>'왜 이 선지가 정답/오답인가'를 논리로 가리는 힘</b>을 훈련합니다.</div></details>
+      <details class="qa"><summary><span class="qmk">Q</span>내신 대비인가요, 수능(정시) 대비인가요?<span class="chev">⌄</span></summary><div class="a">둘 다입니다. 미강고 시험이 <b>수능형 선지·어휘</b>로 출제되기 때문에, 선지 분석력을 키우면 <b>내신과 정시가 동시에</b> 올라갑니다. 정규로 유형·개념을, 클리닉으로 학교 시험을 정조준합니다.</div></details>
+      <details class="qa"><summary><span class="qmk">Q</span>정규와 클리닉은 어떻게 다른가요?<span class="chev">⌄</span></summary><div class="a"><b>정규</b>는 개념·유형과 선지 변별력을 세우는 수업이고, <b>클리닉</b>은 학교별 시험 범위 대비와 약점 보강을 밀착으로 진행하는 시간입니다. 미강고1·2 학년별로 시간표가 나뉘어 있습니다.</div></details>
+      <details class="qa"><summary><span class="qmk">Q</span>영어 학원이나 인강을 이미 듣고 있는데 병행 가능한가요?<span class="chev">⌄</span></summary><div class="a">가능합니다. 다만 이 수업은 지문 해석 나열이 아니라 <b>선지 변별·소거법·킬러 어휘를 반복 훈련</b>하는 데 초점을 두므로, 다른 수업과 겹치기보다 보완되는 경우가 많습니다.</div></details>
+      <details class="qa"><summary><span class="qmk">Q</span>수강료와 정원은 어떻게 되나요?<span class="chev">⌄</span></summary><div class="a">각 반은 밀착 지도를 위해 <b>인원을 제한해 운영</b>하며, 상담을 통해 아이 수준에 맞는 반으로 배정해 드립니다. 정확한 수강료·시간·개강 일정은 <b>전화 상담(031-699-8111 / 010-8337-8158)</b> 시 바로 안내해 드립니다.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="navy-sec final" id="contact">
+  <div class="wrap narrow reveal">
+    <p class="eyebrow" style="justify-content:center">지금, 전화 한 통으로 시작하세요</p>
+    <p class="pull">통암기로 버티지 말고,<br /><span class="em">어떤 선지가 나와도 흔들리지 않는 영어</span>를 만들어 주세요.</p>
+    <div class="contact-card">
+      <div style="font-size:15px;color:#b9c6df;font-weight:700;margin-bottom:14px">📘 영어 등급은 외운 양이 아니라, 선지를 걸러내는 힘에서 갈립니다</div>
+      <div class="call-reasons">전화 한 통이면 이 세 가지를 바로 확인하실 수 있습니다.<br><b>① 우리 아이 영어 상태 진단</b> (통암기형 / 선지 대응력)<br><b>② 미강고1·2 반 · 정규/클리닉 시간표 안내</b><br><b>③ 지금 시작이 맞는지에 대한 솔직한 진단</b> — 아직 이르면 이르다고 말씀드립니다.</div>
+      <div class="phones">
+        <a class="phone" href="tel:031-699-8111">☎ 031-699-8111</a>
+        <a class="phone line" href="sms:010-8337-8158">📱 문자 문의 010-8337-8158</a>
+      </div>
+      <div style="margin:2px 0 18px"><a class="map-btn" href="https://map.naver.com/p/entry/place/1962162458?placePath=%252Fhome%253Fentry%253Dplt&amp;searchType=place&amp;lng=127.1855549&amp;lat=37.5682984&amp;c=15.00,0,0,0,dh" target="_blank" rel="noopener">🗺 네이버 지도로 길찾기</a></div>
+      <p class="addr">📍 <b style="color:#fff">다올105학원</b> · <a href="https://map.naver.com/p/entry/place/1962162458?placePath=%252Fhome%253Fentry%253Dplt&amp;searchType=place&amp;lng=127.1855549&amp;lat=37.5682984&amp;c=15.00,0,0,0,dh" target="_blank" rel="noopener">경기도 하남시 미사강변대로 226번안길 35, 4층</a><span class="tags">다올105 × 민귀홍영어 · 미사강변고 고1·고2 영어 · 정규 + 클리닉</span></p>
+      <p class="hours">🕑 상담 시간 : 평일 오후 2시 ~ 9시</p>
+    </div>
+    <p class="pull" style="font-size:clamp(17px,3vw,22px);margin-top:30px"><span class="em">선지를 읽는 힘은, 한 번 만들면 사라지지 않습니다.</span> 지금 전화 한 통이 아이의 영어를 바꿉니다. 📘</p>
+    <p style="margin-top:22px;font-family:var(--serif);font-size:clamp(15px,2.6vw,18px);color:var(--gold-bright);letter-spacing:.02em">— 미사강변고 영어의 정점, 다올105 × 민귀홍영어 —</p>
+  </div>
+</section>
+
+<footer>© 2026 다올105학원 × 민귀홍영어(MINGUIHONGENGLISH) · 하남미사 미사강변고 영어 내신·정시 전문</footer>
+
+<div class="sticky">
+  <a class="call" href="tel:031-699-8111">☎ 전화 상담</a>
+  <a class="call smsx" href="sms:010-8337-8158">📱 문자</a>
+  <a class="mapx" href="https://map.naver.com/p/entry/place/1962162458?placePath=%252Fhome%253Fentry%253Dplt&amp;searchType=place&amp;lng=127.1855549&amp;lat=37.5682984&amp;c=15.00,0,0,0,dh" target="_blank" rel="noopener">🗺 지도</a>
+</div>
+
+<script>
+  (function(){
+    var els=document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+    var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+    els.forEach(function(e){io.observe(e);});
+  })();
+</script>
+</body>
+</html>
