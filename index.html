@@ -368,6 +368,13 @@
   .book .bk-name{font-size:15px;font-weight:800;color:var(--ink);line-height:1.35}
   .book .bk-desc{font-size:11.5px;color:var(--gold);font-weight:800;letter-spacing:.04em;margin-top:4px}
   @media (max-width:640px){.results{grid-template-columns:1fr}.books{grid-template-columns:1fr 1fr}}
+  /* 쿠폰 받기 섹션 */
+  .coupon-sec{background:linear-gradient(180deg,#f7e8c2,#f0dca4);border-top:1px solid var(--gold-soft);border-bottom:1px solid var(--gold-soft)}
+  .coupon-sec .eyebrow{color:#8a6a1e}.coupon-sec .eyebrow::before{background:#8a6a1e}
+  .coupon-card{margin:26px auto 0;max-width:620px;border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}
+  .coupon-card img{width:100%;height:auto;display:block}
+  .coupon-consent{font-size:12.5px;color:#6b5a2e;line-height:1.65;margin-top:16px;max-width:600px;margin-left:auto;margin-right:auto}
+  .coupon-consent b{color:#5a4a1e}
 </style>
 </head>
 <body>
@@ -475,6 +482,23 @@
       <div class="res"><span class="who">미강고2 · 김O경</span><span class="val up">+30점 ↑</span></div>
     </div>
     <p class="compare-note narrow" style="text-align:center">※ 외에도 현재 계속해서 점수를 취합 중입니다. 다올105 × 민귀홍영어 자체 집계 결과이며, 성적 향상 폭은 개인마다 다를 수 있습니다.</p>
+  </div>
+</section>
+
+<!-- 쿠폰 받기 -->
+<section class="coupon-sec" id="coupon">
+  <div class="wrap narrow reveal" style="text-align:center">
+    <p class="eyebrow" style="justify-content:center">첫 등록 혜택 쿠폰</p>
+    <h2 class="sec">첫 등록 혜택 쿠폰,<br />지금 받으세요</h2>
+    <p class="lead" style="color:#6b5a2e">미강고 영어 정규+클리닉, 첫 등록 시 <b style="color:var(--ink)">첫달 수강료 20% 할인</b>. 아래에서 쿠폰을 받고, 전화·방문 시 제시해 주세요.</p>
+    <div class="coupon-card">
+      <img src="img/쿠폰_첫등록혜택.png" alt="미강고 영어 첫 등록 혜택 쿠폰 - 첫달 수강료 20% 할인" loading="lazy">
+    </div>
+    <div class="cta-row" style="justify-content:center;margin-top:22px">
+      <a class="btn btn-gold" href="img/쿠폰_첫등록혜택.png" download="다올105_미강고영어_첫등록혜택쿠폰.png">⬇ 쿠폰 다운로드</a>
+      <a class="btn" style="color:var(--ink);border:1px solid var(--gold);background:#fff" href="tel:031-699-8111">☎ 전화로 쿠폰 받기 (상담)</a>
+    </div>
+    <p class="coupon-consent">※ 쿠폰을 다운로드하거나 상담을 신청하시면, 쿠폰 사용·만료 등 관련 안내를 <b>카카오 알림톡/문자</b>로 받으시는 데 동의하는 것으로 간주됩니다. 수신 거부는 언제든 가능합니다.</p>
   </div>
 </section>
 
